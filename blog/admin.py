@@ -9,7 +9,7 @@ class PostAdmin(SummernoteModelAdmin):
 
     prepopulated_fields = {'slug': ('title',)} # make the url of post match the title in slug format 
     list_filter = ('status', 'created_on')# creates a section in admin to filter content based on created on 
-    summernote_fields = ('content')# summer not gives more design option on input fields when entering text in content field admin panel
+    summernote_fields = ('content')# summer note gives more design option on input fields when entering text in content field admin panel
 
 
 @admin.register(Comment)
